@@ -1,3 +1,37 @@
+/* Make the body take up the full height and remove default margin */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Center the content inside the #page container */
+#page {
+    display: flex;
+    flex-direction: column; /* Stack slider, text, and grid vertically */
+    align-items: center;    /* Center the content horizontally */
+    justify-content: center; /* Vertically center the content */
+    text-align: center;      /* Center text */
+    padding: 20px;
+}
+
+/* Styling for the slider and its container */
+#gridSlider {
+    margin-bottom: 10px; /* Space below the slider */
+    width: 80%;          /* Make the slider take up most of the page width */
+    max-width: 300px;    /* Limit the maximum width */
+}
+
+/* Display the grid value text nicely */
+#gridValue {
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between the value and grid */
+}
+
+/* Your existing container settings for the grid */
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -5,4 +39,7 @@
     justify-content: center;
     height: 600px;
     width: 600px;
+    background-color: white; /* Optional background color */
+    border-radius: 10px;     /* Optional border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
