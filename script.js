@@ -15,5 +15,11 @@ for(let i = 0; i < `${gridSize ** 2}`; i++) {
     divBox.style.aspectRatio = "1 / 1"; 
     divBox.style.boxSizing = "border-box";
     divBox.style.border = "1px solid black";
+    divBox.style.backgroundColor = "white";
+    divBox.addEventListener("mouseover", () => {
+        divBox.style.backgroundColor = "black";
+      });
     container.appendChild(divBox); 
+
 }
+
